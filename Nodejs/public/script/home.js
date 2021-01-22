@@ -5,6 +5,7 @@ const logo = document.getElementById('logo')
 const scan = document.getElementById('cur')
 const about = document.getElementById('about')
 
+
 const display = ()=> {
     let str = ""
     str += `
@@ -14,7 +15,7 @@ const display = ()=> {
                 <h3>Your health is in your hands!</h3>
             </div>
             <div class="image">
-                <img src="4.jpg" alt="food">
+                <img src="./images/4.jpg" alt="food">
             </div>
         </div>
     `
@@ -31,7 +32,7 @@ logo.addEventListener('click', ()=> {
                 <h3>Your health is in your hands!</h3>
             </div>
             <div class="image">
-                <img src="4.jpg" alt="food">
+                <img src="./images/4.jpg" alt="food">
             </div>
         </div>
     `
@@ -59,13 +60,13 @@ gal.addEventListener('click', ()=> {
                 </ol>
                 <div class="carousel-inner w-100 h-100">
                 <div class="carousel-item active w-100 h-100">
-                    <img src="1.jpg" class="d-block w-100 h-100" alt="...">
+                    <img src="./images/1.jpg" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item w-100 h-100">
-                    <img src="2.jpg" class="d-block w-100 h-100" alt="...">
+                    <img src="./images/2.jpg" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item w-100 h-100">
-                    <img src="3.jpg" class="d-block w-100 h-100" alt="...">
+                    <img src="./images/3.jpg" class="d-block w-100 h-100" alt="...">
                 </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">

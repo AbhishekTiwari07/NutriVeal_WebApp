@@ -1,4 +1,5 @@
 import time
+import requests
 from absl import app, logging
 import cv2
 import numpy as np
@@ -36,11 +37,11 @@ class_names = [c.strip() for c in open(classes_path).readlines()]
 print('classes loaded')
 
 # Initialize Flask application
-app = Flask(__name__)
 
-@app.route("/")
-def home():
-    return render_template("home.html")
+app = Flask(__name__, static_url_path='/static')
+@app.route('/result')
+def send_js():
+    return send_from_directory('static/images', 'detection.jpg')
 
 # API that returns image with detections on it
 @app.route('/image', methods= ['POST'])
@@ -70,8 +71,8 @@ def get_image():
     
     # prepare image for response
     _, img_encoded = cv2.imencode('.png', img)
+
     response = img_encoded.tostring()
-    
     #remove temporary image
     os.remove(image_name)
 
