@@ -1,4 +1,5 @@
-/Nodejs/node_modules
-/Object-Detection-API/weights
-/Object-Detection-API/yolov3_tf2/__pycache__
-/Object-Detection-API/conda-gpu.yml
+/frontend/node_modules
+/backend/weights
+/backend/yolov3_tf2/__pycache__
+/backend/conda-gpu.yml
+
