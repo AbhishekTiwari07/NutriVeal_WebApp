@@ -23,6 +23,13 @@ YOLOV3_TINY_LAYER_LIST = [
     'yolo_output_1',
 ]
 
+nutri = {
+    0:["Per 100g serving","130 Calories","28.7g Carbohydrates","0.2g Fat","2.36g Protein"],
+    2:["Per 100g serving","140 Calories","6.36g Protein","19.3g Carbohydrate","3.93g Fat"],
+    3:["For regular size Apple","95 Calories","1g Protein","25g Carbohydrate","Fibre ","Vitamin C"],
+    1:["For regular size Orange","47 Calories","0.9g Protein","11.8g Carbohydrate","2.4 Fibre","Vitamin C","Vitamin B1"],
+    4:["For regular size Banana","89 Calories","1.1g Protein","22.8g Carbohydrate","2.6 Fibre","Potassium","Vitamin B6","Vitamin C"]
+}
 
 def load_darknet_weights(model, weights_file, tiny=False):
     wf = open(weights_file, 'rb')
@@ -124,9 +131,12 @@ def draw_outputs(img, outputs, class_names):
         confidence = '{:.2f}%'.format(objectness[i]*100)
         text = '{} {}'.format(class_names[int(classes[i])], confidence)
         text_size = draw.textsize(text, font=font)
+        nutrients = nutri[int(classes[i])]
+        for i in nutrients:
+            text=text+"\n"+i
         draw.rectangle([x0, y0 - text_size[1], x0 + text_size[0], y0],
                         fill=tuple(color))
-        draw.text((x0, y0 - text_size[1]), text, fill='black',
+        draw.text((x0, y0 - text_size[1]), text, fill='blue',
                               font=font)
     rgb_img = img.convert('RGB')
     img_np = np.asarray(rgb_img)

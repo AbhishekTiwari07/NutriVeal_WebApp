@@ -4,7 +4,7 @@ const fetchimg = (location)=>{
             if (data.error)
                 display.textContent = data.error
             else {
-                display.innerHTML = '<img src="./images/detection.jpg">'
+                display.innerHTML = '<img src="./images/detection.jpg" style="width:500px">'
             }
         })
     })
