@@ -19,18 +19,23 @@ app.get('/',(req,res)=>{
     res.render('home')
 })
 
-app.get('/scan',(req,res)=>{
-    if(!req.query.address)
-        return res.send('Please provide image!!!')
-    image.scan("sed",(error,response)=>{
-        if(error)
-            return res.send({error})
-        return res.send(response)
-    })
+app.get('/rscan',(req,res)=>{
+    res.render('rscan')
 })
 
-app.get('*',(req,res)=>{
-    res.render('404')
+app.get('/scan',(req,res)=>{
+    console.log(req.query.myfile)
+    if(!req.query.myfile)
+        return res.send('Please provide image!!!')
+    image.scan(req.query.myfile,(error,response)=>{
+        if(error)
+            return res.send({error})
+        return res.send(
+            {
+                "image": "true"
+            }
+        )
+    })
 })
 
 app.listen(port,(error)=>{

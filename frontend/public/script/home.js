@@ -2,9 +2,7 @@ const home = document.getElementById('showcase')
 const check = document.getElementById('check')
 const gal = document.getElementById('gal')
 const logo = document.getElementById('logo')
-const scan = document.getElementById('cur')
 const about = document.getElementById('about')
-
 
 const display = ()=> {
     let str = ""
@@ -35,14 +33,6 @@ logo.addEventListener('click', ()=> {
                 <img src="./images/4.jpg" alt="food">
             </div>
         </div>
-    `
-    home.innerHTML = str
-})
-
-scan.addEventListener('click', ()=> {
-    let str = ""
-    str += `
-        
     `
     home.innerHTML = str
 })

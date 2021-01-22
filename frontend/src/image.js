@@ -1,6 +1,7 @@
 var request = require('request')
 var fs = require('fs')
 const image = (path,callback)=>{
+    path = '/Users/asus/Downloads/'+path
     var options = {
         'method': 'POST',
         'url': 'http://0.0.0.0:5000/image',
@@ -8,9 +9,9 @@ const image = (path,callback)=>{
         },
         formData: {
           'images': {
-            'value': fs.createReadStream('/Users/asus/Downloads/seb.jpg'),
+            'value': fs.createReadStream(path),
             'options': {
-              'filename': '/C:/Users/asus/Downloads/seb.jpg',
+              'filename': '/C:'+path,
               'contentType': null
             }
           }
