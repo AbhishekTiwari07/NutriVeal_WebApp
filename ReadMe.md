@@ -1,11 +1,11 @@
 <p align="center"><img src="https://thumbs.dreamstime.com/b/nutritional-information-concept-hand-use-magnifying-glass-to-zoom-see-details-nutrition-facts-food-salad-bowl-156922624.jpg" align="center" width="350" height="200"></p>
-<a href="#"><h1 align="center">Predicautionar</h1></a>
+<a href="#"><h1 align="center">NutriVeal</h1></a>
 <h4 align="center">Keeps your health up-to-date</h4>
 
 ## Live Links
-- [📽  Project Demo](https://youtu.be/hW2mXxDrdcg)
+- [📽  Project Demo](https://youtu.be/P2U7-tYlzy0)
 - [💻 Web Platform](#) NA   
-- [📹  Presentation File](https://docs.google.com/presentation/d/18cDSHh3flbx7s8KOXpJ1MhzAo5HYp4RVIXPV7voxsXI/edit#slide=id.g60166f7374_0_9)
+- [📹  Presentation File](https://devfolio.co/submissions/nutriveal-9dda)
 
 
 ## The problem:
