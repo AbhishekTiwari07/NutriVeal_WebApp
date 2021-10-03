@@ -50,7 +50,6 @@ In short it works as a kind of an offline google suggestion of health related th
 
 - [ 👨🏻‍💻 Abhishek Tiwari](https://github.com/AbhishekTiwari07)
 - [ 💻 Yogi Valecha](https://github.com/yogivalecha9898)
-- [ 👨 Vinay Wankhede](#)
 
 
 <p align="center"> Hoping to make a better world with 💻programming </p>
